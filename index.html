@@ -26,7 +26,7 @@
 				// console.log($(this).text());
 				if($(this).text() == 'Negative value') {
 					$.ajax({
-						url: 'index.html',
+						url: '<?php $_SERVER['PHP_SELF']; ?>',
 						context: document.body
 					}).done(function () {
 						// console.log('Disable button');
@@ -34,7 +34,7 @@
 					});
 				} else {
 					$.ajax({
-						url: 'index.html',
+						url: '<?php $_SERVER['PHP_SELF']; ?>',
 						context: document.body
 					}).done(function () {
 						console.log('Disable button');
